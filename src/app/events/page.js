@@ -1,13 +1,12 @@
 import Layout from "@/components/Layout";
 
 
-
-export default function News() {
+export default function Events() {
 
     return (
         <> 
         <Layout>
-            <p>News test</p>
+            <p>Events test</p>
         </Layout>
         </>
        

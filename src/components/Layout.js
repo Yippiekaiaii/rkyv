@@ -7,7 +7,7 @@ export default function Layout({children}) {
     return (
             <div>             
                 <Navbar/>    
-                {children}          
+                <div className="mx-[20%] mt-5">{children}</div>         
             </div>
             )
     

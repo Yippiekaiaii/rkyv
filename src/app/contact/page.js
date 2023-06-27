@@ -1,13 +1,11 @@
 import Layout from "@/components/Layout";
 
-
-
-export default function News() {
+export default function Contact() {
 
     return (
         <> 
         <Layout>
-            <p>News test</p>
+            <p>Contact test</p>
         </Layout>
         </>
        

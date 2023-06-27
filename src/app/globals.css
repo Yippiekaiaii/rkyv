@@ -9,5 +9,14 @@ body {
 
 .navBar li{
   margin-right: 30px;
-  color: white;
+  color: white; 
+}
+
+.linkBounce {
+  transition: text-shadow 0.3s ease;
+}
+
+.linkBounce:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 0 5px white;
 }
