@@ -10,6 +10,7 @@ return (
             <Link href={'/'}><li className="linkBounce">Home</li></Link>
             <Link href={'/news'}><li className="linkBounce">News</li></Link>
             <Link href={'/events'}><li className="linkBounce">Events</li></Link>
+            <Link href={'/gallery'}><li className="linkBounce">Gallery</li></Link>
             <Link href={'/contact'}><li className="linkBounce">Contact</li></Link>
         </ul>
         <hr/>

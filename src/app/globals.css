@@ -20,3 +20,7 @@ body {
   transform: translateY(-2px);
   text-shadow: 0 0 5px white;
 }
+
+.eventImage {
+  width: 300px;
+}

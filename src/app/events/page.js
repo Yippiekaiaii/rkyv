@@ -7,6 +7,7 @@ export default function Events() {
         <> 
         <Layout>
             <p>Events test</p>
+           
         </Layout>
         </>
        
