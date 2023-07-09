@@ -5,7 +5,8 @@ export default function Contact() {
     return (
         <> 
         <Layout>
-            <p>Contact test</p>
+            <h2>Contact Us</h2>
+           
         </Layout>
         </>
        

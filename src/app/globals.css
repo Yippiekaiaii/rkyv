@@ -24,3 +24,31 @@ body {
 .eventImage {
   width: 300px;
 }
+
+.typed{
+  width:155px;
+  letter-spacing: 2px;
+  font-family: 'Anonymous Pro', monospace; 
+  border-right: 2px solid hsl(0,0%,80%);
+  animation: typewriter 3s steps(44) normal, blinkTextCursor 0.5s infinite ;  
+  white-space: nowrap;
+  overflow:hidden;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;    
+  }
+  to {
+    width: 155px;
+  }
+}
+
+@keyframes blinkTextCursor {
+   from {
+    border-right-color: white;
+   }
+   to {
+    border-right-color: transparent;
+   }
+}
