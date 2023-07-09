@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         
             <Head>
-              <script src="https://w.soundcloud.com/player/api.js" />
+              <script async src="https://w.soundcloud.com/player/api.js" />
             </Head>
 
         <div className="flex justify-center mt-2">
