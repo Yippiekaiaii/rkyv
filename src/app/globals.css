@@ -7,6 +7,11 @@ body {
   color: white;
 }
 
+
+.navBar {
+  background-color:#0D1110;
+}
+
 .navBar li{
   margin-right: 30px;
   color: white; 
@@ -22,7 +27,7 @@ body {
 }
 
 .eventImage {
-  width: 300px;
+  width: 300px; 
 }
 
 .typed{
@@ -51,4 +56,8 @@ body {
    to {
     border-right-color: transparent;
    }
+}
+
+.newsImage{
+  width:300px;
 }

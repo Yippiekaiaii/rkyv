@@ -7,17 +7,20 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <>      
+    <>   
+        <div className="absolute inset-0 bg-cover bg-no-repeat bg-center z-0" style={{ backgroundImage: 'url("/img/IMG-20230711-WA0000.jpg")' }}>
+
         <Layout></Layout>
 
         <div className="flex justify-center items-center">
-          <img src="rKyv-AW_Desat-white clipped.jpg" alt="logo" className="mr-3"/>
+          {/*}<img src="rKyv-AW_Desat-white clipped.jpg" alt="logo" className="mr-3"/>{*/}
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-10">        
           <Link href="https://www.instagram.com/rkyv_music/" target="_blank"><img src="instagram480.png" alt="instagram" className="w-10 mr-3"/></Link>
           <Link href="https://soundcloud.com/rkyv" target="_blank"><img src="soundcloud.png" alt="soundcloud" className="w-10 mr-3"/></Link>
           <img src="twitter500.png" alt="instagram" className="w-10"/>
         </div>
+      
 
         <div className="flex justify-center mt-5">
           <h3 className="typed">Listen now....</h3>
@@ -72,7 +75,7 @@ export default function Home() {
                 SON003 - Inside EP - RKYV [Digital release date 06-07-23]
               </a>
         </div>
-
+        </div>
         
     </>
     
