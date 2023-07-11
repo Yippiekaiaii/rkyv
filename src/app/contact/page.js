@@ -5,7 +5,7 @@ export default function Contact() {
 
     return (
         <>
-         <div className="absolute inset-0 bg-cover bg-no-repeat bg-center z-0" style={{ backgroundImage: 'url("")'}}>
+         <div className="absolute inset-0 bg-cover bg-no-repeat bg-center z-0">
         <Layout>           
 
             <div className="flex flex-col justify-center items-center text-center gap-5 mt-10">
