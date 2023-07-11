@@ -9,7 +9,7 @@ export default function Contact() {
         <Layout>           
 
             <div className="flex flex-col justify-center items-center text-center gap-5 mt-10">
-                <p className="w-1/2 mb-2">Leeds UK - Jay Kilka and Mikey 'Acid Dad Projekt' Ingram have been at the forefront of the Leeds electronic music scene for a number of years. Now joint forces in the studio it has become clear this meeting of minds has affirmed a certain sound which have now become "RKYV".</p>        
+                <p className="w-1/2 mb-2">Leeds UK - Jay Kilka and Mikey &apos;Acid Dad Projekt&apos; Ingram have been at the forefront of the Leeds electronic music scene for a number of years. Now joint forces in the studio it has become clear this meeting of minds has affirmed a certain sound which have now become "RKYV".</p>        
                 <p className="w-1/2">Both avid music collectors and possessing a natural inclination towards technology and fascination with sound design, they soon developed a strong focus on pushing boundaries of electronic music. Their sound is heavily influenced by the dance floors of the legendary Fabric,DC10,Berghain and Sonar Festival Barcelona with them finding support from Joseph Capriati and Richie Hawtin through James Zabelia to name but a few.</p>
             </div>
 
