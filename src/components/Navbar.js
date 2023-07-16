@@ -3,8 +3,7 @@
 import Link from "next/link"
 
 export default function Navbar({show}) {
-   console.log("show:",show)
- 
+   
 return (
     <>
     <div className="navBar">

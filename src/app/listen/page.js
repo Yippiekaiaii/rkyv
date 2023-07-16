@@ -1,15 +1,13 @@
-"use client"
+"use client";
 
 import Layout from "@/components/Layout";
 import Head from 'next/head'
 import { useEffect, useState } from "react";
 
-
 export default function Listen() {    
 
     const [windowSize,setWindowSize]= useState({width:496, height:undefined,})
-    
-
+   
     //Handle responsive sizing of sound cloud component
     useEffect(() => {
         const handleResize = () => {
@@ -42,7 +40,7 @@ export default function Listen() {
                             <h2 className="flex justify-center mt-5 text-black">Inside EP</h2>
                             <div className="flex justify-center mt-2 flex-column">                       
                                 <iframe 
-                                width={window.innerWidth}
+                                width={windowSize.innerWidth}
                                 height="166"
                                 scrolling="no"
                                 frameBorder="no"
@@ -58,7 +56,7 @@ export default function Listen() {
                             <h2 className="flex justify-center mt-5 text-black">Butch</h2>
                             <div className="flex justify-center mt-2">         
                                 <iframe 
-                                width={window.innerWidth} 
+                                width={windowSize.innerWidth} 
                                 height="166" 
                                 scrolling="no" 
                                 frameborder="no" 

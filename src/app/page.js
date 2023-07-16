@@ -49,7 +49,7 @@ export default function Home() {
 
         <div className="flex justify-center mt-2 mx-5">
             <iframe 
-              width={window.innerWidth} 
+              width={windowSize.innerWidth} 
               height="166"
               scrolling="no"
               frameBorder="no"
