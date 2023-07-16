@@ -1,12 +1,33 @@
+"use client"
+
 import Layout from "@/components/Layout";
 import Head from 'next/head'
+import { useEffect, useState } from "react";
 
 
-export default function Listen() {
+export default function Listen() {    
+
+    const [windowSize,setWindowSize]= useState({width:496, height:undefined,})
+    
+
+    //Handle responsive sizing of sound cloud component
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth<496){
+            setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+          }         
+        };    
+        window.addEventListener('resize', handleResize);    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);    
+     
+     
 
     return (
         <> 
-        <div className="absolute inset-0 bg-contain bg-no-repeat bg-center z-0" style={{ backgroundImage: 'url("/img/IMG-20230711-WA0006.jpg")'}}>
+        <div className="absolute inset-0 bg-contain bg-center bg-no-repeat z-0" style={{ backgroundImage: 'url("/img/IMG-20230711-WA0006.jpg")'}}>
         <Layout>        
         <div >  
                     <Head>
@@ -21,7 +42,7 @@ export default function Listen() {
                             <h2 className="flex justify-center mt-5 text-black">Inside EP</h2>
                             <div className="flex justify-center mt-2 flex-column">                       
                                 <iframe 
-                                width="30%"
+                                width={window.innerWidth}
                                 height="166"
                                 scrolling="no"
                                 frameBorder="no"
@@ -37,7 +58,7 @@ export default function Listen() {
                             <h2 className="flex justify-center mt-5 text-black">Butch</h2>
                             <div className="flex justify-center mt-2">         
                                 <iframe 
-                                width="30%" 
+                                width={window.innerWidth} 
                                 height="166" 
                                 scrolling="no" 
                                 frameborder="no" 

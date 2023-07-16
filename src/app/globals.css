@@ -27,7 +27,7 @@ body {
 }
 
 .eventImage {
-  width: 300px; 
+  width: 300px;
 }
 
 .typed{
@@ -60,4 +60,10 @@ body {
 
 .newsImage{
   width:300px;
+}
+
+@media (max-width:1350px) {
+
+
+
 }

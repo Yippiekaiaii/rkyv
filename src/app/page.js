@@ -1,11 +1,28 @@
+"use client"
 
 import Layout from "@/components/Layout"
 import Navbar from "@/components/Navbar"
 import Link from "next/link"
 import Head from 'next/head'
+import { useState,useEffect } from "react"
 
+export default function Home() {  
 
-export default function Home() {
+  const [windowSize,setWindowSize]= useState({width:496, height:undefined,})    
+
+    //Handle responsive sizing of sound cloud component
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth<496){
+            setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+          }         
+        };    
+        window.addEventListener('resize', handleResize);    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []); 
+
   return (
     <>   
         <div className="absolute inset-0 bg-cover bg-no-repeat bg-center z-0" style={{ backgroundImage: 'url("/img/IMG-20230711-WA0000.jpg")' }}>
@@ -30,9 +47,9 @@ export default function Home() {
               <script async src="https://w.soundcloud.com/player/api.js" />
             </Head>
 
-        <div className="flex justify-center mt-2">
+        <div className="flex justify-center mt-2 mx-5">
             <iframe 
-              width="20%"
+              width={window.innerWidth} 
               height="166"
               scrolling="no"
               frameBorder="no"
