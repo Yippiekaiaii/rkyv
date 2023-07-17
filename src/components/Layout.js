@@ -17,7 +17,7 @@ export default function Layout({children}) {
                         </svg>
                     </button>
                     </div> 
-                    <img src="rKyv-AW_Desat-white clipped.jpg" alt="logo" className="block md:hidden w-20 flex mx-auto"/>
+                    <img src="rKyv-AW_Desat-white clipped.jpg" alt="logo" className="absolute md:hidden w-20 left-1/2 transform -translate-x-1/2"/>
                 </div>
                 <Navbar show={showNav}/>  
               

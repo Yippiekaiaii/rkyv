@@ -34,10 +34,10 @@ export default function Listen() {
 
                     
                     <div>
-                        <h2 className="flex justify-center text-black">Check out our tracks below...</h2>
+                        <h2 className="flex justify-center text-white">Check out our tracks below...</h2>
                         {/*Inside Imbeded Player*/}
                         <div>
-                            <h2 className="flex justify-center mt-5 text-black">Inside EP</h2>
+                            <h2 className="flex justify-center mt-5 text-white">Inside EP</h2>
                             <div className="flex justify-center mt-2 flex-column">                       
                                 <iframe 
                                 width={windowSize.innerWidth}
@@ -53,7 +53,7 @@ export default function Listen() {
 
                         {/*Butch Imbeded Player End*/} 
                         <div>
-                            <h2 className="flex justify-center mt-5 text-black">Butch</h2>
+                            <h2 className="flex justify-center mt-5 text-white">Butch</h2>
                             <div className="flex justify-center mt-2">         
                                 <iframe 
                                 width={windowSize.innerWidth} 

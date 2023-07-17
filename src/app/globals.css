@@ -58,12 +58,21 @@ body {
    }
 }
 
-.newsImage{
-  width:300px;
+.imageContainer {
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsImage {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media (max-width:1350px) {
 
-
+ 
 
 }

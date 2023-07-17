@@ -9,7 +9,7 @@ return (
     <div className="navBar">
     <div className="mx-[20%] navBar">    
 
-        <ul className={(show?"flex items-center justify-center h-20 navBar transition-all":"flex items-center justify-center h-20 navBar hidden md:flex transition-all")}>            
+        <ul className={(show?"flex items-center justify-center h-20 navBar transition-all text-sm":"flex items-center justify-center h-20 navBar hidden md:flex transition-all")}>            
             <span><img src="rKyv-AW_Desat-white clipped.jpg" alt="logo" className="w-20 mr-10 hidden md:flex"/></span>
             <Link href={'/'}><li className="linkBounce">Home</li></Link>
             <Link href={'/news'}><li className="linkBounce">News</li></Link>          
