@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <>   
-        <div className="absolute inset-0 bg-cover bg-no-repeat bg-center z-0" style={{ backgroundImage: 'url("/img/IMG-20230711-WA0000.jpg")' }}>
+        <div className="inset-0 bg-cover bg-no-repeat bg-center z-0 h-screen" style={{ backgroundImage: 'url("/img/IMG-20230711-WA0000.jpg")' }}>
 
         <Layout></Layout>
 
@@ -41,12 +41,13 @@ export default function Home() {
 
         <div className="flex justify-center mt-5">
           <h3 className="typed">Listen now....</h3>
-        </div>
+        </div >
         
             <Head>
               <script async src="https://w.soundcloud.com/player/api.js" />
             </Head>
 
+        <div className="fixed bottom-0 w-full mb-20">
         <div className="flex justify-center mt-2 mx-5">
             <iframe 
               width={windowSize.innerWidth} 
@@ -91,6 +92,8 @@ export default function Home() {
               >
                 SON003 - Inside EP - RKYV [Digital release date 06-07-23]
               </a>
+        </div>
+
         </div>
         </div>
         

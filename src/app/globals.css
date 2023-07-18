@@ -26,9 +26,23 @@ body {
   text-shadow: 0 0 5px white;
 }
 
+.eventImage-container{
+  overflow:hidden;
+}
+
 .eventImage {
   width: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 700ms;
+  cursor: pointer;
 }
+
+.eventImage:hover {
+  /*transform: translateY(-0.2rem);*/
+  transition: transform 700ms;
+  transform: scale(1.1);
+}
+
 
 .typed{
   width:155px;
@@ -71,8 +85,3 @@ body {
   max-height: 100%;
 }
 
-@media (max-width:1350px) {
-
- 
-
-}

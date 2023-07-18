@@ -25,7 +25,7 @@ export default function Listen() {
 
     return (
         <> 
-        <div className="absolute inset-0 bg-contain bg-center bg-no-repeat z-0" style={{ backgroundImage: 'url("/img/IMG-20230711-WA0006.jpg")'}}>
+        <div className="inset-0 bg-cover bg-center bg-no-repeat z-0 h-screen" style={{ backgroundImage: 'url("/img/IMG-20230711-WA0006.jpg")'}}>
         <Layout>        
         <div >  
                     <Head>
@@ -34,10 +34,10 @@ export default function Listen() {
 
                     
                     <div>
-                        <h2 className="flex justify-center text-white">Check out our tracks below...</h2>
+                        <h2 className="flex justify-center text-black text-center">Check out our tracks below...</h2>
                         {/*Inside Imbeded Player*/}
                         <div>
-                            <h2 className="flex justify-center mt-5 text-white">Inside EP</h2>
+                            <h2 className="flex justify-center mt-5 text-black">Inside EP</h2>
                             <div className="flex justify-center mt-2 flex-column">                       
                                 <iframe 
                                 width={windowSize.innerWidth}
@@ -53,7 +53,7 @@ export default function Listen() {
 
                         {/*Butch Imbeded Player End*/} 
                         <div>
-                            <h2 className="flex justify-center mt-5 text-white">Butch</h2>
+                            <h2 className="flex justify-center mt-5 text-black">Butch</h2>
                             <div className="flex justify-center mt-2">         
                                 <iframe 
                                 width={windowSize.innerWidth} 
