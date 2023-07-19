@@ -21,7 +21,7 @@ export default function Layout({children}) {
                 </div>
                 <Navbar show={showNav}/>  
               
-                <div className="mx-[20%] mt-5">{children}</div>         
+                <div className="mx-[5%] md:mx-[20%] mt-5">{children}</div>         
             </div>
             )
     

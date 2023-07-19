@@ -40,7 +40,7 @@ export default function Gallery() {
 
         <div className="fixed top-0 left-0 flex items-center justify-center w-screen h-screen z-50">         
             <div className="fixed inset-0 bg-black opacity-75"></div>          
-          <img src={enlargePath} alt="enlarged gallery image" onClick={toggleEnlarge} className="relative z-10"></img>
+          <img src={enlargePath} alt="enlarged gallery image" onClick={toggleEnlarge} className="relative z-10 px-[5%]"></img>
         </div>
 
         )}
