@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Link from "next/link"
+import Image from "next/image";
 
 export default function Contact() {
 
@@ -7,12 +8,25 @@ export default function Contact() {
         <>
          <div className="absolute inset-0 bg-cover bg-no-repeat bg-center z-0">
         <Layout>           
+            <div className="flex justify-center items-center flex-col lg:flex-row">
 
-            <div className="flex flex-col justify-center items-center text-center gap-5 mt-10">
-                <p className="text-sm w-screen px-8 mb-2 lg:w-2/3 md:mx-0">Leeds UK - Jay Kilka and Mikey Acid Dad Projekt Ingram have been at the forefront of the Leeds electronic music scene for a number of years. Now joint forces in the studio it has become clear this meeting of minds has affirmed a certain sound which have now become RKYV.</p>        
-                <p className="text-sm w-screen px-8 lg:w-2/3 md:mx-0">Both avid music collectors and possessing a natural inclination towards technology and fascination with sound design, they soon developed a strong focus on pushing boundaries of electronic music. Their sound is heavily influenced by the dance floors of the legendary Fabric,DC10,Berghain and Sonar Festival Barcelona with them finding support from Joseph Capriati and Richie Hawtin through James Zabelia to name but a few.</p>
+                <div className="technoContainer">
+                    <Image 
+                        src="/techno_centre_3.jpg" 
+                        alt="techno centre" 
+                        width="300" 
+                        height="300" 
+                        className="techno">
+                    </Image>
+                </div>        
+
+               {/*} <img src="techno_centre.jpg" alt="techno centre" className="techno"></img> {*/}
+                <div className="flex flex-col text-center gap-5 mt-10">
+                    <p className="text-sm w-screen px-8 mb-2 lg:w-2/3 md:mx-0">Leeds UK - Jay Kilka and Mikey Acid Dad Projekt Ingram have been at the forefront of the Leeds electronic music scene for a number of years. Now joint forces in the studio it has become clear this meeting of minds has affirmed a certain sound which have now become RKYV.</p>        
+                    <p className="text-sm w-screen px-8 lg:w-2/3 md:mx-0">Both avid music collectors and possessing a natural inclination towards technology and fascination with sound design, they soon developed a strong focus on pushing boundaries of electronic music. Their sound is heavily influenced by the dance floors of the legendary Fabric,DC10,Berghain and Sonar Festival Barcelona with them finding support from Joseph Capriati and Richie Hawtin through James Zabelia to name but a few.</p>
+                </div>
             </div>
-
+          
             <div className="flex justify-center mt-10 mb-4">
                  <h2 >Contact Us</h2>               
             </div> 

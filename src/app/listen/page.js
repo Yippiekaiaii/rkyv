@@ -3,6 +3,7 @@
 import Layout from "@/components/Layout";
 import Head from 'next/head'
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Listen() {    
 
@@ -35,6 +36,11 @@ export default function Listen() {
                     
                     <div>
                         <h2 className="flex justify-center text-black text-center">Check out our tracks below...</h2>
+
+                        <p className="text-black flex justify-center">Or visit our Beatport page to buy any of our tracks </p> 
+                            <p className="text-black flex justify-center"><Link href="https://www.beatport.com/release/inside-ep/4148570" className="glow-black" target="_blank" rel="noopener noreferrer">HERE</Link></p>
+                       
+
                         {/*Inside Imbeded Player*/}
                         <div>
                             <h2 className="flex justify-center mt-5 text-black">Inside EP</h2>
@@ -66,10 +72,40 @@ export default function Listen() {
                         </div>
                         {/*Butch Imbeded Player End*/}
 
+                        <div>
+                            <h2 className="flex justify-center mt-5 text-black">Inside</h2>
+                            <div className="flex justify-center mt-2">
+                                 <iframe src="https://embed.beatport.com/?id=17788165&type=track" width={windowSize.innerWidth} height="162" frameborder="0" scrolling="no" className="beatPort"></iframe>
+                            </div>
+                        </div>
 
-                    </div>
+                        <div>
+                            <h2 className="flex justify-center mt-5 text-black">Inside Laura Jones Remix</h2>
+                            <div className="flex justify-center mt-2">
+                                 <iframe src="https://embed.beatport.com/?id=17788168&type=track" width={windowSize.innerWidth} height="162" frameborder="0" scrolling="no" className="beatPort"></iframe>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 className="flex justify-center mt-5 text-black">Behind You</h2>
+                            <div className="flex justify-center mt-2">
+                                 <iframe src="https://embed.beatport.com/?id=17788168&type=track" width={windowSize.innerWidth} height="162" frameborder="0" scrolling="no" className="beatPort"></iframe>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 className="flex justify-center mt-5 text-black">Running Man</h2>
+                            <div className="flex justify-center mt-2">
+                                 <iframe src="https://embed.beatport.com/?id=17788168&type=track" width={windowSize.innerWidth} height="162" frameborder="0" scrolling="no" className="beatPort"></iframe>
+                            </div>
+                        </div>               
+                        
+                    </div>      
+             
        
         </div>
+
+      
         </Layout>
         </div>
         </>
