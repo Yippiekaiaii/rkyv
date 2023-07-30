@@ -76,11 +76,19 @@ body {
    }
 }
 
+/*
 .newsItem{
   background-image: url("/img/crowd.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+*/
+
+.newsItem{
+  max-height:234px;
+  overflow: hidden;
 }
 
 .news-content {
@@ -108,6 +116,18 @@ body {
   font-family: 'Roboto', sans-serif; 
   background-color: black;
   margin-bottom: 3px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.newsTitle {
+  text-align: justify;
+  margin: 0; 
+  font-family: 'Roboto', sans-serif; 
+  background-color: black;
+  margin-bottom: 3px;
+  max-height: 150px;
+  overflow: hidden;
 }
 
 .technoContainer{
